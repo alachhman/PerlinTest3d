@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d390421-99bc-47ab-81ff-9679e1d7a38e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TileController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TileGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PerlinNoiseGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tile.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TileGenerator.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XDQnAvpHGv8r2fNUPWIj8uERjW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d390421-99bc-47ab-81ff-9679e1d7a38e" name="Default Changelist" comment="" />
+      <created>1580578355100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580578355100</updated>
+      <workItem from="1580578365606" duration="565000" />
+      <workItem from="1580578971892" duration="362000" />
+      <workItem from="1580579374662" duration="3836000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="-1346" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580583250559">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1346" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1580583250559" />
+    <state x="-1042" y="306" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580582138739">
+      <screen x="-1600" y="0" width="1600" height="870" />
+    </state>
+    <state x="-1042" y="306" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1580582138739" />
+    <state x="558" y="102" key="SettingsEditor" timestamp="1580582116968">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="558" y="102" key="SettingsEditor/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1580582116968" />
+  </component>
+</project>
