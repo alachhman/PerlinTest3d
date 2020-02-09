@@ -120,6 +120,7 @@ public class TileGenerator : MonoBehaviour {
 
     private IEnumerator CreateWorld(Tile[,] tiles) {
         isGenerating = true;
+        var enemyCount = 0;
         for (int x = 0; x < worldWidth; x++) {
             yield return new WaitForSeconds(spawnSpeed);
             for (int z = 0; z < worldHeight; z++) {
@@ -129,22 +130,18 @@ public class TileGenerator : MonoBehaviour {
                 block.GetComponent<TileController>().tile = tiles[x, z];
                 block.transform.parent = transform;
                 block.transform.localPosition = new Vector3(x, tiles[x,z].verticalityScale - 4.5f, z);
-            }
-        }
-
-        var enemyCount = 0;
-        foreach (var tile in tiles) {
-            var enemySpawn = Random.Range(0f, 1f);
-            if (tile.type == "Plains") {
-                if (enemySpawn > 0.95f) {
-                    GameObject enemy =
-                        Instantiate(EnemyGameObject, Vector3.zero, EnemyGameObject.transform.rotation) as GameObject;
-                    enemy.transform.localPosition = new Vector3(tile.coords[0], tile.verticalityScale + 0.9f, tile.coords[1]);
-                    enemyCount++;
+                var tile = tiles[x, z];
+                var enemySpawn = Random.Range(0f, 1f);
+                if (tile.type == "Plains") {
+                    if (enemySpawn > 0.95f) {
+                        GameObject enemy =
+                            Instantiate(EnemyGameObject, Vector3.zero, EnemyGameObject.transform.rotation) as GameObject;
+                        enemy.transform.localPosition = new Vector3(tile.coords[0], tile.verticalityScale + 0.9f, tile.coords[1]);
+                        enemyCount++;
+                    }
                 }
             }
         }
-
         isGenerating = false;
     }
 

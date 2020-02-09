@@ -7,10 +7,12 @@ public class CameraController : MonoBehaviour {
     public GameObject target;
     public float rotationSpeed = 1f;
     public Vector3 originalPos;
+    public Quaternion originalRot;
     private bool isResetingCamera;
 
     void Start() {
-        originalPos = gameObject.transform.position;
+        originalPos = transform.position;
+        originalRot = transform.localRotation;
         isResetingCamera = false;
     }
     void Update() {
@@ -41,6 +43,7 @@ public class CameraController : MonoBehaviour {
 
     private void resetCamera() {
         transform.position = Vector3.MoveTowards(transform.position, originalPos, Time.deltaTime * 20f);
+        transform.localRotation = originalRot;
         transform.LookAt(target.transform);
     }
 }
