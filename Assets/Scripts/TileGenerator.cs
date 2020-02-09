@@ -22,17 +22,18 @@ public class TileGenerator : MonoBehaviour {
     // The number of cycles of the basic noise pattern that are repeated
     // over the width and height of the texture.
     public float scale = 1.0F;
-    public float verticalityScale = 0f;
 
     public float[,] grid = new float[25, 25];
 
     public GameObject tileMapCurr;
     public GameObject tileMapPrefab;
+    public GameObject EnemyGameObject;
 
     public GameObject block1;
     public int worldWidth = 25;
     public int worldHeight = 25;
     public float spawnSpeed = 0;
+    public int maxEnemies;
 
     PerlinNoiseGrid noise;
 
@@ -46,7 +47,7 @@ public class TileGenerator : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKeyDown("r") && !isGenerating) {
-            ClearChildren(tileMapCurr);
+            ClearChildren();
             noise = new PerlinNoiseGrid(10, 10, 1.0f);
             StartCoroutine(CreateWorld(generateTileGrid(noise)));
         }
@@ -57,9 +58,11 @@ public class TileGenerator : MonoBehaviour {
         for (int x = 0; x < worldWidth; x++) {
             for (int z = 0; z < worldHeight; z++) {
                 float currentNoise = noise[x, z];
+                float vScale = (currentNoise * 3f) - 0.9f;
                 Color currentColor;
                 string type;
                 string occupiedBy = "-";
+                int[] coords = {x, z};
                 switch (currentNoise) {
                     case float n when (currentNoise >= 0.45):
                         var tileSeed = Random.Range(0, 10);
@@ -104,10 +107,11 @@ public class TileGenerator : MonoBehaviour {
                     default:
                         currentColor = Color.blue;
                         type = "Ocean";
+                        vScale = 0f;
                         break;
                 }
 
-                tiles[x, z] = new Tile(occupiedBy, type, currentColor, currentNoise);
+                tiles[x, z] = new Tile(occupiedBy, type, currentColor, currentNoise, coords, vScale);
             }
         }
 
@@ -124,22 +128,31 @@ public class TileGenerator : MonoBehaviour {
                 block.GetComponent<Renderer>().sharedMaterial.color = tiles[x, z].color;
                 block.GetComponent<TileController>().tile = tiles[x, z];
                 block.transform.parent = transform;
-                if (tiles[x, z].type == "Ocean") {
-                    //verticalityScale = tiles[x, z].noise * 1.0f;
-                    verticalityScale = 0f;
-                }
-                else {
-                    verticalityScale = (tiles[x, z].noise * 3f) - 0.9f;
-                }
+                block.transform.localPosition = new Vector3(x, tiles[x,z].verticalityScale - 4.5f, z);
+            }
+        }
 
-                block.transform.localPosition = new Vector3(x, verticalityScale - 4.5f, z);
+        var enemyCount = 0;
+        foreach (var tile in tiles) {
+            var enemySpawn = Random.Range(0f, 1f);
+            if (tile.type == "Plains") {
+                if (enemySpawn > 0.95f) {
+                    GameObject enemy =
+                        Instantiate(EnemyGameObject, Vector3.zero, EnemyGameObject.transform.rotation) as GameObject;
+                    enemy.transform.localPosition = new Vector3(tile.coords[0], tile.verticalityScale + 0.9f, tile.coords[1]);
+                    enemyCount++;
+                }
             }
         }
 
         isGenerating = false;
     }
 
-    public void ClearChildren(GameObject obj) {
+    public void ClearChildren() {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies) {
+            Destroy(enemy);
+        }
         GameObject[] tiles = GameObject.FindGameObjectsWithTag("Tile");
         foreach (GameObject tile in tiles) {
             Destroy(tile);

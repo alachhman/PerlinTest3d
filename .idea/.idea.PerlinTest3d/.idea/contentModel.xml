@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
+          <e p="EnemyController.cs" t="Include" />
           <e p="PerlinNoiseGrid.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileController.cs" t="Include" />

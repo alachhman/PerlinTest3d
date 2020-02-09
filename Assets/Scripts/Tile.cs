@@ -15,15 +15,22 @@ public class Tile{
     public string type;
     public Color color;
     public float noise;
-
-    public Tile(string occupiedBy, string type, Color color, float noise){
+    public int[] coords;
+    public Enemy enemy;
+    public float verticalityScale;
+    
+    public Tile(string occupiedBy, string type, Color color, float noise, int[] coords, float verticalityScale){
         this.occupiedBy = occupiedBy;
         this.type = type;
         this.color = color;
         this.noise = noise;
+        this.coords = coords;
+        this.verticalityScale = verticalityScale;
     }
 
     public string toString(){
-        return "Type: " + this.type + "\r\nOccupied By: " + this.occupiedBy;
+        return "Type: " + this.type + "\r\n" +
+               "Occupied By: " + this.occupiedBy + "\r\n" +
+               "Coords: [ " + this.coords[0] + " , " + this.coords[1] + " ]";
     }
 }
