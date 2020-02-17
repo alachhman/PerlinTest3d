@@ -2,14 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class Enemy : MonoBehaviour {
+public class Enemy {
     public Sprite sprite;
     public string enemyName;
+
     public int[] coords;
-    /*
-     * Don't forget the stats
-     */
+    public int ATK = Random.Range(0, 10);
+    public int DEF = Random.Range(0, 10);
+    public int MAG = Random.Range(0, 10);
+    public int SPD = Random.Range(0, 10);
 
     public Enemy(Sprite sprite, string enemyName, int[] coords) {
         this.sprite = sprite;
@@ -18,6 +21,8 @@ public class Enemy : MonoBehaviour {
     }
 
     public String toString() {
-        return "Name: " + this.enemyName;
+        return "NAME: " + this.enemyName + "\r\n"
+             + "ATK: " + this.ATK + "    " + "DEF: " + this.DEF + "\r\n"
+             + "MAG: " + this.MAG + "    " + "SPD: " + this.SPD + "\r\n";
     }
 }

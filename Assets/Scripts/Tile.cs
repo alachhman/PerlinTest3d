@@ -29,8 +29,8 @@ public class Tile{
     }
 
     public string toString(){
-        return "Type: " + this.type + "\r\n" +
-               "Occupied By: " + this.occupiedBy + "\r\n" +
-               "Coords: [ " + this.coords[0] + " , " + this.coords[1] + " ]";
+        return "TYPE: " + this.type + "\r\n" +
+               "OCCUPIED: " + this.occupiedBy + "\r\n" +
+               "COORDS: [ " + this.coords[0] + " , " + this.coords[1] + " ]";
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class TileGenerator : MonoBehaviour {
-    private bool isGenerating;
+    public bool isGenerating;
 
     public Material Material1;
 
@@ -34,6 +34,8 @@ public class TileGenerator : MonoBehaviour {
     public int worldHeight = 25;
     public float spawnSpeed = 0;
     public int maxEnemies;
+
+    public List<Enemy> enemies = new List<Enemy>();
 
     PerlinNoiseGrid noise;
 
@@ -129,18 +131,32 @@ public class TileGenerator : MonoBehaviour {
                 block.GetComponent<Renderer>().sharedMaterial.color = tiles[x, z].color;
                 block.GetComponent<TileController>().tile = tiles[x, z];
                 block.transform.parent = transform;
-                block.transform.localPosition = new Vector3(x, tiles[x,z].verticalityScale - 4.5f, z);
+                block.transform.localPosition = new Vector3(x, tiles[x, z].verticalityScale - 4.5f, z);
                 var tile = tiles[x, z];
                 var enemySpawn = Random.Range(0f, 1f);
                 if (tile.type == "Plains") {
                     if (enemySpawn > 0.95f) {
                         GameObject enemy =
-                            Instantiate(EnemyGameObject, Vector3.zero, EnemyGameObject.transform.rotation) as GameObject;
-                        enemy.transform.localPosition = new Vector3(tile.coords[0], tile.verticalityScale + 0.9f, tile.coords[1]);
+                            Instantiate(EnemyGameObject, Vector3.zero,
+                                EnemyGameObject.transform.rotation) as GameObject;
+                        Sprite temp = Resources.Load("enemy_1", typeof(Sprite)) as Sprite;
+                        int[] coords = {x, z};
+                        Enemy enemyObj = new Enemy(temp, "Nature Slime", coords);
+                        enemies.Add(enemyObj);
+                        enemy.GetComponent<EnemyController>().enemy = enemyObj;
+                        enemy.transform.localPosition =
+                            new Vector3(tile.coords[0], tile.verticalityScale + 0.9f, tile.coords[1]);
                         enemyCount++;
                     }
                 }
             }
+        }
+        
+        //ToDo: some editor work to make a clone of enemy prefab to simulate a unit, then implement the logic to only spawn one of him
+        //leave scaling for the future
+        int[] unitSpawn = {Random.Range(0, 25), Random.Range(0, 25)};
+        while (tiles[unitSpawn[0], unitSpawn[1]].type != "Plains") {
+            
         }
         isGenerating = false;
     }
@@ -150,6 +166,7 @@ public class TileGenerator : MonoBehaviour {
         foreach (GameObject enemy in enemies) {
             Destroy(enemy);
         }
+
         GameObject[] tiles = GameObject.FindGameObjectsWithTag("Tile");
         foreach (GameObject tile in tiles) {
             Destroy(tile);
