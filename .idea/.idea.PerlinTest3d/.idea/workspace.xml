@@ -2,16 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94154ba5-fb54-474d-89b6-227233835027" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Background2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Background2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Background3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Background3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Materials/enemy_1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Materials/enemy_1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/Player.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/TextBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/TextBox.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/background1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/background1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/bitTextBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/bitTextBox.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/characterSprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/characterSprites/unit_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/characterSprites/unit_test.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/enemy_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/enemy_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/enemy_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/enemy_2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/weaponSprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/weaponSprites/sword_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Images/weaponSprites/sword_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/characterSprites/unit_test.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/characterSprites/unit_test.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Background2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Background2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Background3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Background3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Materials/enemy_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Materials/enemy_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/TextBox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/TextBox.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/background1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/background1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/bitTextBox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/bitTextBox.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/characterSprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/characterSprites/unit_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/characterSprites/unit_test.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/enemy_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/enemy_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/enemy_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/enemy_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/weaponSprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/weaponSprites/sword_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/weaponSprites/sword_1.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/TileMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TileMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +92,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1XDbh0OVEiZIUcsZN29DOIovO9B" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -125,6 +176,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1069" y="159" key="RiderGenerateDialog" timestamp="1580597272666">
