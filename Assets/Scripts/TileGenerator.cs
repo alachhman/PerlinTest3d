@@ -154,10 +154,12 @@ public class TileGenerator : MonoBehaviour {
         
         //ToDo: some editor work to make a clone of enemy prefab to simulate a unit, then implement the logic to only spawn one of him
         //leave scaling for the future
-        int[] unitSpawn = {Random.Range(0, 25), Random.Range(0, 25)};
-        while (tiles[unitSpawn[0], unitSpawn[1]].type != "Plains") {
-            
-        }
+        // int[] unitSpawn = {Random.Range(0, 25), Random.Range(0, 25)};
+        // while (tiles[unitSpawn[0], unitSpawn[1]].type != "Plains") {
+        //     
+        // }
+        
+        
         isGenerating = false;
     }
 

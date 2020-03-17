@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Anthony\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Anthony\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_PerlinTest3d.-1463589574.00" t="ExcludeRecursive" />
-    <e p="D:\Programming\GameDevelopment\PerlinTest3d" t="IncludeRecursive">
+    <e p="C:\Users\Anthony\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_PerlinTest3d.-1631703662.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Anthony\RiderProjects\PerlinTest3d" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
