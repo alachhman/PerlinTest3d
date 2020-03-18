@@ -10,9 +10,11 @@ public class TileController : MonoBehaviour {
     public Text tileText;
     public Text enemyText;
     public List<Enemy> enemies;
-
+    public List<Tile> tiles;
+    
     void Start() {
         enemies = GameObject.Find("TileMap").GetComponent<TileGenerator>().enemies;
+        tiles = GameObject.Find("TileMap").GetComponent<TileGenerator>().tilesList;
         enemyText = GameObject.Find("EntityText").GetComponent<Text>();
         tileText = GameObject.Find("EnvironmentText").GetComponent<Text>();
         //tile = new Tile("false", getTypes());

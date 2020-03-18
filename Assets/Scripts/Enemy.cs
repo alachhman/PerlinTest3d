@@ -5,7 +5,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Enemy {
-    public Sprite sprite;
+    public GameObject gameObject;
     public string enemyName;
 
     public int[] coords;
@@ -13,9 +13,10 @@ public class Enemy {
     public int DEF = Random.Range(0, 10);
     public int MAG = Random.Range(0, 10);
     public int SPD = Random.Range(0, 10);
+    public int MOV = 1;
 
-    public Enemy(Sprite sprite, string enemyName, int[] coords) {
-        this.sprite = sprite;
+    public Enemy(GameObject gameObject, string enemyName, int[] coords) {
+        this.gameObject = gameObject;
         this.enemyName = enemyName;
         this.coords = coords;
     }
