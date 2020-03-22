@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94154ba5-fb54-474d-89b6-227233835027" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PerlinTest3d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Images/Player.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Images/Player.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" afterDir="false" />
     </list>
@@ -32,10 +30,10 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileController.cs" />
       </list>
     </option>
@@ -105,7 +103,8 @@
       <workItem from="1581963477558" duration="8042000" />
       <workItem from="1583594128397" duration="1813000" />
       <workItem from="1584408482113" duration="1898000" />
-      <workItem from="1584455273339" duration="13336000" />
+      <workItem from="1584455273339" duration="13970000" />
+      <workItem from="1584826903310" duration="10678000" />
     </task>
     <servers />
   </component>
@@ -131,18 +130,20 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1069" y="159" key="RiderGenerateDialog" timestamp="1580597272666">
-      <screen x="-1600" y="0" width="1600" height="870" />
+    <state x="531" y="164" key="RiderGenerateDialog" timestamp="1584827637584">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="-1069" y="159" key="RiderGenerateDialog/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1580597272666" />
+    <state x="531" y="164" key="RiderGenerateDialog/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1584827637584" />
     <state x="301" y="81" key="SettingsEditor" timestamp="1584479284283">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="-1299" y="78" key="SettingsEditor/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1580593910536" />
     <state x="301" y="81" key="SettingsEditor/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1584479284283" />
-    <state x="-1137" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1581969401053">
-      <screen x="-1600" y="0" width="1600" height="870" />
+    <state x="463" y="188" width="672" height="702" key="search.everywhere.popup" timestamp="1584829057007">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="-1137" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870/-1600.0.1600.870@-1600.0.1600.870" timestamp="1581969401053" />
+    <state x="463" y="188" width="672" height="702" key="search.everywhere.popup/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1584829057007" />
   </component>
 </project>

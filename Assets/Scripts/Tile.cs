@@ -17,14 +17,16 @@ public class Tile{
     public float noise;
     public int[] coords;
     public Enemy enemy;
+    public GameObject tileObject;
     public float verticalityScale;
     
-    public Tile(string occupiedBy, string type, Color color, float noise, int[] coords, float verticalityScale){
+    public Tile(string occupiedBy, string type, Color color, float noise, int[] coords, GameObject tileObject, float verticalityScale){
         this.occupiedBy = occupiedBy;
         this.type = type;
         this.color = color;
         this.noise = noise;
         this.coords = coords;
+        this.tileObject = tileObject;
         this.verticalityScale = verticalityScale;
     }
 

@@ -23,20 +23,20 @@ public class TileGenerator : MonoBehaviour {
 	// over the width and height of the texture.
 	public float scale = 1.0F;
 
-	public float[,] grid = new float[25, 25];
+	public float[,] grid = new float[16, 16];
 
 	public GameObject tileMapCurr;
 	public GameObject tileMapPrefab;
 	public GameObject EnemyGameObject;
 
 	public GameObject block1;
-	public int worldWidth = 25;
-	public int worldHeight = 25;
+	public static int worldWidth = 16;
+	public static int worldHeight = 16;
 	public float spawnSpeed = 0;
 	public int maxEnemies;
 
 	public List<Enemy> enemies = new List<Enemy>();
-	public List<Tile> tilesList = new List<Tile>();
+	public Tile[,] tilesList = new Tile[worldHeight, worldWidth];
 
 	PerlinNoiseGrid noise;
 
@@ -114,9 +114,9 @@ public class TileGenerator : MonoBehaviour {
 						vScale = 0f;
 						break;
 				}
-				Tile tile = new Tile(occupiedBy, type, currentColor, currentNoise, coords, vScale);
+				Tile tile = new Tile(occupiedBy, type, currentColor, currentNoise, coords,null, vScale);
 				tiles[x, z] = tile;
-				tilesList.Add(tile);
+				tilesList = tiles;
 			}
 		}
 		return tiles;
@@ -134,7 +134,7 @@ public class TileGenerator : MonoBehaviour {
 				block.GetComponent<TileController>().tile = tiles[x, z];
 				block.transform.parent = transform;
 				block.transform.localPosition = new Vector3(x, tiles[x, z].verticalityScale - 4.5f, z);
-				
+				tiles[x, z].tileObject = block;
 				var tile = tiles[x, z];
 				var enemySpawn = Random.Range(0f, 1f);
 				if (tile.type == "Plains") {

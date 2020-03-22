@@ -13,7 +13,7 @@ public class Enemy {
     public int DEF = Random.Range(0, 10);
     public int MAG = Random.Range(0, 10);
     public int SPD = Random.Range(0, 10);
-    public int MOV = 1;
+    public int MOV = Random.Range(0, 4);
 
     public Enemy(GameObject gameObject, string enemyName, int[] coords) {
         this.gameObject = gameObject;
